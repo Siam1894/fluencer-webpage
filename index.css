@@ -97,25 +97,19 @@ nav ul
     padding: 200px 200px;
 
 }
-.heading-section-1
-{
-    margin-top: 110px;
-    background: url("images/Circle\ design.svg");
-   width: 475px;
-   height: 475px;
-  padding: 40px 25px;
 
-}
 .img-2{
-  
+    background: url("images/Circle\ design.svg");
     width: 440px;
     height: 414px;
     justify-content: center;
+    padding-top:40px ;
+    padding-left: 50px;
 }
 .container
 {
     display: flex;
-    gap: 130px
+    gap: 100px
 
 }
  /*heder section is finished*/
@@ -127,6 +121,7 @@ nav ul
  }
  .logos-section
  {
+    position:relative;
     margin-top:100px; 
     margin-left: 270px;
 
@@ -222,10 +217,10 @@ p
     padding-top: 50px;
    
 }
-.footer-section
+.nav-section 
 {
     margin-top: 40px;
-    margin-left: 820px;
+    font-size: 30px;
 
 }
 
@@ -245,23 +240,18 @@ p
 
  /*devices responsive*/
  @media screen and (max-width:576px) {
-   *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 
-   }
    .logos-section img{
     width: 55px;
     height: 50px;
     margin: 10px;
+    
    }
    .logos-section
    {
-       display: flex;
-      
+    text-align: center;
       margin-left: 10px;
-  
+      
    }
    .images-sections
   {
@@ -302,7 +292,7 @@ p
       
     }
     nav ul {
-        flex-direction: column;
+        flex-direction:column ;
        
         
     }
@@ -314,20 +304,88 @@ p
     .container{
        
         flex-wrap: wrap-reverse;
-        gap: 400px;
+        text-align: center;
+        gap: 50px
 
     }
     .img-2{
-        height: 190px;
-        width:202px;
+        height:440 px;
+        width:414px;
     }
     .heading-section-1{
         padding: 20px;
-        width: 257px;
-        height: 157px;
+        width: 457px;
+        height: 457px;
     }
   
   
  }
+ @media screen and (min-width: 576px) and (max-width: 960px) {
 
+.logos-section img{
+ width: 55px;
+ height: 50px;
+ margin: 10px;
+}
+.logos-section
+{
+    display: flex;
+   margin-left: 200px;
+   text-align: center;
+
+}
+.images-sections
+{
+ grid-template-columns: repeat(1, 1fr);
+ margin-top: 50px;
+ margin-left: 140px;
+ margin-right: 140px;  
+}
+.colors
+{
+ color:rgba(224, 44, 109, 0.87);
+ text-align: right;
+ margin-right:130px;
+ margin-top: 8px;
+}
+.main-section-container 
+{
+ margin-top: 100px;
+ flex-direction: column;
+ align-items: center;
+ margin-left: 10px;
+ padding-left: 20px;
+ padding-right: 20px;
+}
+
+
+ .logo{
+     justify-content: center;
+     font-size:25px ;
+     gap: 10px;
+ }
+
+ .heading-section{
+     flex-direction:column;
+     padding: 20px;
+    
+ }
+.container{
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+}
+ .img-2{
+     height: 440px;
+     width: 414px;
+
+    
+ }
+
+
+
+
+
+
+ }
 
